@@ -1,8 +1,9 @@
-﻿生成启动时间为 8/18/2017 6:39:42 PM。
+﻿生成启动时间为 8/22/2017 2:24:37 PM。
      1>项目“D:\WorkSpace\CPP\CppStudy\CppBook\CppBook\CppBook.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          C:\Software\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt start.cpp
          start.cpp
+     1>d:\workspace\cpp\cppstudy\cppbook\cppbook\start.cpp(722): warning C4244: “=”: 从“time_t”转换到“unsigned long”，可能丢失数据
        Link:
          C:\Software\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\WorkSpace\CPP\CppStudy\CppBook\Debug\CppBook.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\WorkSpace\CPP\CppStudy\CppBook\Debug\CppBook.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\WorkSpace\CPP\CppStudy\CppBook\Debug\CppBook.lib" /MACHINE:X86 Debug\b.obj
          Debug\c.obj
@@ -15,4 +16,4 @@
 
 生成成功。
 
-已用时间 00:00:01.83
+已用时间 00:00:01.00

@@ -716,20 +716,191 @@ int count3 = 100;
 
 
 
+void getSeconds(unsigned long *par)
+{
+	//get current second
+	*par = time(NULL);
+	return;
+}
+
+double getAverage(int *arr, int size)
+{
+	int sum = 0;
+	for (int i = 0; i < size;++i)
+	{
+		sum += arr[i];
+	}
+	double avg = double(sum) / size;
+	return avg;
+}
+
+int * getRandom()
+{
+	static int r[10];
+	srand((unsigned)time(NULL));
+	for (int i = 0; i < 10; ++i)
+	{
+		r[i] = rand();
+		cout << r[i] << endl;
+	}
+	return r;
+}
+
+
 //cpp指针
 int main()
 {
-	int var1;
-	char var2[10];
-	cout << &var1 << endl;
-	cout << &var2 << endl;
+	const int MAX = 3;
+	int  var[MAX] = { 10, 100, 200 };
+	//int var1;
+	//char var2[10];
+	//cout << &var1 << endl;
+	//cout << &var2 << endl;
 
-	int var = 20;
-	int *ip;
-	ip = &var;
-	cout << var << endl;
-	cout << ip << endl;
-	cout << *ip << endl;
+	//int var = 20;
+	//int *ip;
+	//ip = &var;
+	//cout << var << endl;
+	//cout << ip << endl;
+	//cout << *ip << endl;
+
+	////NULL指针
+	//int *ptr = NULL;
+	//int var = 100;
+	//int *ptr2 = &var;
+	//cout << "ptr:" << ptr<<endl;
+	//cout << "ptr2:" << ptr2 << endl;
+	//if (!ptr)
+	//{
+	//	cout << "空指针" << endl;
+	//}
+	//if (!ptr2)
+	//{
+	//	cout << "2空指针" << endl;
+	//}
+
+
+	/////指针递增
+	//int var[3] = { 10, 100, 200 };
+	////int *ptr;
+	////ptr = var;
+
+	////int *ptr = var; //方式1
+	//int *ptr = &var[0];//方式2
+
+	//for (int i = 0; i < 3;i++)
+	//{
+	//	cout << "Address of var[" << i << "] = ";
+	//	cout << ptr << endl;
+	//	cout << "Value of var[" << i << "] = ";
+	//	cout << *ptr << endl;
+	//	//move to next position
+	//	ptr++;
+	//}
+	//cout << endl << endl;
+
+
+	//////指针递减
+	//ptr = &var[3 - 1];
+	//for (int i = 3 - 1; i >= 0;i--)
+	//{
+	//	cout << "Address of var[" << i << "] = ";
+	//	cout << ptr << endl;
+	//	cout << "Value of var[" << i << "] = ";
+	//	cout << *ptr << endl;
+	//	// 移动到下一个位置
+	//	ptr--;
+	//}
+	//cout << endl << endl;
+
+	//ptr = var;
+	//int pos = 0;
+	//while (ptr <= &var[3-1])
+	//{
+	//	cout << "Address of var[" << pos << "] = ";
+	//	cout << ptr << endl;
+
+	//	cout << "Value of var[" << pos << "] = ";
+	//	cout << *ptr << endl;
+
+	//	// 指向上一个位置
+	//	ptr++;
+	//	pos++;
+	//}
+
+
+	//////指针vs数组
+	//const int MAX = 3;
+	//int  var[MAX] = { 10, 100, 200 };
+	//int  *ptr;
+	//// 指针中的数组地址
+	//ptr = var;
+	//for (int i = 0; i < MAX; i++)
+	//{
+	//	*(var + i) = i;
+	//	cout << var[i] << endl;
+	//}
+
+
+	//////指针数组
+	//int *ptr[MAX];
+	//for (int i = 0; i < MAX; i++)
+	//{
+	//	ptr[i] = &var[i];
+	//}
+	//for (int i = 0; i < MAX; i++)
+	//{
+	//	cout << "Value of var[" << i << "] = ";
+	//	cout << *ptr[i] << endl;
+	//}
+
+	//char *names[MAX] = {
+	//	"Zara Ali",
+	//	"Hina Ali",
+	//	"Nuha Ali",
+	//	//"Sara Ali",
+	//};
+
+	//for (int i = 0; i < MAX; i++)
+	//{
+	//	cout << "Value of names[" << i << "] = ";
+	//	cout << names[i] << endl;
+	//}
+
+
+	////cpp指向指针的指针
+	//int varI = 3000;
+	//int *ptr;
+	//int **pptr;
+	//ptr = &varI;
+	//pptr = &ptr;
+	//// 使用 pptr 获取值
+	//cout << "Value of var :" << varI << endl;
+	//cout << "Value available at *ptr :" << *ptr << endl;
+	//cout << "Value available at **pptr :" << **pptr << endl;
+
+	
+	//cpp 传递指针给函数
+	unsigned long sec;
+	getSeconds(&sec);
+	cout << "Number of seconds:" << sec << endl;
+
+	int balance[5] = { 1000, 2, 3, 17, 50 };
+	double avg;
+	avg = getAverage(balance, 5);
+	cout << "Average value is:" << avg << endl;
+
+
+	//cpp从函数返回指针
+
+	int *p;
+	p = getRandom();
+	for (int i = 0; i < 10; i++)
+	{
+		cout << "*(p +" << i << "):";
+		cout << *(p + i) << endl;
+	}
+
 
 	system("pause");
 }
