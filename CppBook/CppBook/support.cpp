@@ -1,9 +1,8 @@
 #include <iostream>
-#include "start.h"
 
-extern int count3;
+extern int eCount;
 
 void write_extern(void)
 {
-	std::cout << "eCount is " << count3 << std::endl;
+	std::cout << "eCount is " << eCount << std::endl;
 }

@@ -1,19 +1,26 @@
-﻿生成启动时间为 8/22/2017 2:24:37 PM。
-     1>项目“D:\WorkSpace\CPP\CppStudy\CppBook\CppBook\CppBook.vcxproj”在节点 2 上(Build 个目标)。
+﻿Build started 6/14/2017 1:30:26 AM.
+     1>Project "E:\CppStudy\CppBook\CppBook\CppBook.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Software\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt start.cpp
+         D:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt start.cpp
          start.cpp
-     1>d:\workspace\cpp\cppstudy\cppbook\cppbook\start.cpp(722): warning C4244: “=”: 从“time_t”转换到“unsigned long”，可能丢失数据
+     1>e:\cppstudy\cppbook\cppbook\start.cpp(213): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>e:\cppstudy\cppbook\cppbook\start.cpp(94): warning C4101: 'f' : unreferenced local variable
+     1>e:\cppstudy\cppbook\cppbook\start.cpp(93): warning C4101: 'cf' : unreferenced local variable
+     1>e:\cppstudy\cppbook\cppbook\start.cpp(100): warning C4101: 'floatd' : unreferenced local variable
+     1>e:\cppstudy\cppbook\cppbook\start.cpp(94): warning C4101: 'salary' : unreferenced local variable
+     1>e:\cppstudy\cppbook\cppbook\start.cpp(144): warning C4101: 'miles' : unreferenced local variable
+     1>e:\cppstudy\cppbook\cppbook\start.cpp(95): warning C4101: 'd' : unreferenced local variable
+     1>e:\cppstudy\cppbook\cppbook\start.cpp(93): warning C4101: 'ch' : unreferenced local variable
+     1>e:\cppstudy\cppbook\cppbook\start.cpp(92): warning C4101: 'j' : unreferenced local variable
        Link:
-         C:\Software\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\WorkSpace\CPP\CppStudy\CppBook\Debug\CppBook.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\WorkSpace\CPP\CppStudy\CppBook\Debug\CppBook.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\WorkSpace\CPP\CppStudy\CppBook\Debug\CppBook.lib" /MACHINE:X86 Debug\b.obj
-         Debug\c.obj
-         Debug\myfirst.obj
+         D:\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\CppStudy\CppBook\Debug\CppBook.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\CppStudy\CppBook\Debug\CppBook.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\CppStudy\CppBook\Debug\CppBook.lib" /MACHINE:X86 Debug\myfirst.obj
          Debug\Source.obj
          Debug\start.obj
          Debug\support.obj
-         CppBook.vcxproj -> D:\WorkSpace\CPP\CppStudy\CppBook\Debug\CppBook.exe
-     1>已完成生成项目“D:\WorkSpace\CPP\CppStudy\CppBook\CppBook\CppBook.vcxproj”(Build 个目标)的操作。
+         Debug\threadLocalTest.obj
+         CppBook.vcxproj -> E:\CppStudy\CppBook\Debug\CppBook.exe
+     1>Done Building Project "E:\CppStudy\CppBook\CppBook\CppBook.vcxproj" (Build target(s)).
 
-生成成功。
+Build succeeded.
 
-已用时间 00:00:01.00
+Time Elapsed 00:00:00.92

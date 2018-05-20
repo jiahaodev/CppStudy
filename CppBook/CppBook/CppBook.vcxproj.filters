@@ -30,28 +30,11 @@
     <ClCompile Include="start.cpp">
       <Filter>Source Files\greenhand</Filter>
     </ClCompile>
-    <ClCompile Include="b.cpp">
-      <Filter>Source Files\greenhand</Filter>
-    </ClCompile>
-    <ClCompile Include="c.cpp">
-      <Filter>Source Files\greenhand</Filter>
-    </ClCompile>
     <ClCompile Include="support.cpp">
       <Filter>Source Files\greenhand</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="b.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="c.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="support.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="start.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="threadLocalTest.cpp">
+      <Filter>Source Files\greenhand</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

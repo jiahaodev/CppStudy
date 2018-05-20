@@ -64,18 +64,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="b.cpp" />
-    <ClCompile Include="c.cpp" />
     <ClCompile Include="myfirst.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="start.cpp" />
     <ClCompile Include="support.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="b.h" />
-    <ClInclude Include="c.h" />
-    <ClInclude Include="start.h" />
-    <ClInclude Include="support.h" />
+    <ClCompile Include="threadLocalTest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
