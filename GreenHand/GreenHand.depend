@@ -1,5 +1,9 @@
 # depslib dependency file v1.0
-1526833745 source:e:\cppstudy\greenhand\main.cpp
+1527001506 source:e:\cppstudy\greenhand\main.cpp
+
+1527001072 source:e:\cppstudy\greenhand\object.cpp
+
+1527001499 source:e:\cppstudy\greenhand\base.cpp
 	<iostream>
 	<ctime>
 	<cstdlib>
