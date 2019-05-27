@@ -1,0 +1,1 @@
+C++Primer < data/book.txt > result.txt
